@@ -1,0 +1,168 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{567A4BAC-91A8-46F0-957C-D0ED5947F6CA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>KeywordDrivenTest</RootNamespace>
+    <AssemblyName>KeywordDrivenTest</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>True</IsCodedUITest>
+    <TestProjectType>CodedUITest</TestProjectType>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aspose.Cells">
+      <HintPath>..\..\Inputs\Aspose\Aspose.Cells.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="WebDriver, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.8.0\lib\net45\WebDriver.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WebDriver.Support, Version=3.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.Support.3.8.0\lib\net45\WebDriver.Support.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <CodeAnalysisDependentAssemblyPaths Condition=" '$(VS100COMNTOOLS)' != '' " Include="$(VS100COMNTOOLS)..\IDE\PrivateAssemblies">
+      <Visible>False</Visible>
+    </CodeAnalysisDependentAssemblyPaths>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="LoadExcelFile.cs" />
+    <Compile Include="TestExecuter.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UIOperation.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="TestCaseExample\Keyword driven test case-RealAssetSample -Search.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Category\RealCondition- Inspection Category- Add.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Category\RealCondition- Inspection Category- Download template.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Category\RealCondition- Inspection Category- Edit.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Category\RealCondition- Inspection Category- Search.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Category\RealCondition- Inspection Category- View Log.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Rating\RealCondition- Inspection Rating- Add.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Rating\RealCondition- Inspection Rating- Download template.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Rating\RealCondition- Inspection Rating- Edit.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Rating\RealCondition- Inspection Rating- Search.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection Rating\RealCondition- Inspection Rating- View Log.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection schedule\RealCondition- Inspection Schedule- Add.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection schedule\RealCondition- Inspection Schedule- Edit.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Inspection schedule\RealCondition- Inspection Schedule- Search.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Lookup Management\RealCondition- Lookup Management- Add.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Lookup Management\RealCondition- Lookup Management- Delete.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Lookup Management\RealCondition- Lookup Management- Download template.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Lookup Management\RealCondition- Lookup Management- Edit.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\Lookup Management\RealCondition- Lookup Management- Search.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition Building Item\RealCondition-Building Item - Add.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition Building Item\RealCondition-Building Item - Download template .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition Building Item\RealCondition-Building Item - Edit.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition Building Item\RealCondition-Building Item - Import.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition Building Item\RealCondition-Building Item - Search.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition Building Item\RealCondition-Building Item - Viewlog .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition BuildingItem Type\RealCondition- BuildingItem Type- Add .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition BuildingItem Type\RealCondition- BuildingItem Type- Download template.xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition BuildingItem Type\RealCondition- BuildingItem Type- Edit .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition BuildingItem Type\RealCondition- BuildingItem Type- Search .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition BuildingItem Type\RealCondition- BuildingItem Type- Viewlog .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition Inspection\RealCondition- Inspection - Edit .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition Inspection\RealCondition- Inspection - Search .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition SystemType\RealCondition- SystemType- Add .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition SystemType\RealCondition- SystemType- Download template .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition SystemType\RealCondition- SystemType- Edit .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition SystemType\RealCondition- SystemType- Search .xlsx" />
+    <None Include="TestCaseExample\KeyWordDrivenTestCase\RealCondition\RealCondition SystemType\RealCondition- SystemType- Viewlog .xlsx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="TestCaseExample\KeyWordDrivenTestCase\RealConfig\" />
+    <Folder Include="TestCaseExample\KeyWordDrivenTestCase\RealEnergy\" />
+    <Folder Include="TestCaseExample\KeyWordDrivenTestCase\RealFinanceConfig\" />
+    <Folder Include="TestCaseExample\KeyWordDrivenTestCase\RealFinance\" />
+    <Folder Include="TestCaseExample\KeyWordDrivenTestCase\RealPropertyAccounting\" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' Or '$(VisualStudioVersion)' == '11.0') And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="UIAutomationTypes" />
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\Selenium.Chrome.WebDriver.2.33\build\Selenium.Chrome.WebDriver.targets" Condition="Exists('..\packages\Selenium.Chrome.WebDriver.2.33\build\Selenium.Chrome.WebDriver.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Selenium.Chrome.WebDriver.2.33\build\Selenium.Chrome.WebDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.Chrome.WebDriver.2.33\build\Selenium.Chrome.WebDriver.targets'))" />
+    <Error Condition="!Exists('..\packages\Selenium.WebDriver.IEDriver.3.7.0\build\Selenium.WebDriver.IEDriver.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Selenium.WebDriver.IEDriver.3.7.0\build\Selenium.WebDriver.IEDriver.targets'))" />
+  </Target>
+  <Import Project="..\packages\Selenium.WebDriver.IEDriver.3.7.0\build\Selenium.WebDriver.IEDriver.targets" Condition="Exists('..\packages\Selenium.WebDriver.IEDriver.3.7.0\build\Selenium.WebDriver.IEDriver.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
